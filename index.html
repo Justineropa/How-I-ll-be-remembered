@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When I'm Gone, This Remains</title>
+
+<style>
+
+/* ===== Custom Font Upload ===== */
+@font-face {
+    font-family: 'MyFont';
+    src: url('assets/font/YourFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --bg: #0f0f12;
+    --text: #f1f1f1;
+    --accent: #888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'MyFont', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+.subtle {
+    font-size: 0.9rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    margin-top: 20px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+}
+
+/* Music Gallery Layout */
+.music-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 0.8rem;
+    opacity: 0.4;
+    letter-spacing: 1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Landing -->
+<section>
+    <div class="container">
+        <h1>
+            I will not be remembered for my face.<br>
+            I will be remembered for what I built.
+        </h1>
+        <p class="subtle">Scroll.</p>
+    </div>
+</section>
+
+<!-- Art -->
+<section>
+    <div class="container">
+        <h1>Art</h1>
+        <p>
+            I leave proof in lines.<br>
+            Every drawing is a thought made visible.
+        </p>
+        <img src="assets/images/drawing1.jpg" alt="My Artwork">
+    </div>
+</section>
+
+<!-- Music -->
+<section>
+    <div class="container">
+        <h1>Music</h1>
+        <p>
+            I leave proof in sound.<br>
+            These are echoes of work that will outlast me.
+        </p>
+
+        <div class="music-gallery">
+            <img src="assets/images/track1.jpg" alt="Track Screenshot 1">
+            <img src="assets/images/track2.jpg" alt="Track Screenshot 2">
+        </div>
+    </div>
+</section>
+
+<!-- Code -->
+<section>
+    <div class="container">
+        <h1>Code</h1>
+        <p>
+            I leave proof in systems.<br>
+            This website is one of them.
+        </p>
+        <img src="assets/images/screenshot1.jpg" alt="Website Screenshot">
+    </div>
+</section>
+
+<!-- Final -->
+<section>
+    <div class="container">
+        <h1>
+            People fade.<br>
+            Work remains.
+        </h1>
+        <p>
+            This is how I want to be remembered.
+        </p>
+    </div>
+</section>
+
+<footer>
+    Built with intention.
+</footer>
+
+</body>
+  </html> 
